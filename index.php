@@ -69,10 +69,10 @@ require './lang.php';
         <div class="dropdown">
             <a href="#"><?= __('Languages')?></a>
             <div class="dropdown-content hide">
-                <div><a href="./index.php?lang=en">English</a></div>
-                <div><a href="./index.php?lang=fr">Français</a></div>
-                <div><a href="./index.php?lang=es">Española</a></div>
-                <div><a href="./index.php?lang=zh">中国人</a></div>
+                <div><a href="./index?lang=en">English</a></div>
+                <div><a href="./index?lang=fr">Français</a></div>
+                <div><a href="./index?lang=es">Española</a></div>
+                <div><a href="./index?lang=zh">中国人</a></div>
             </div>
         </div>
     </header>
