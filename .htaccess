@@ -1,7 +1,16 @@
+#.htaccess engine start
 RewriteEngine On
+
+#remove .php or any extension from url
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
+#redirect to index page when hit home page
 Redirect 301 /php-lang/home http://localhost/php-lang/index
 
+#redirect to error page when file not found
 ErrorDocument 404 /php-lang/notfound.php
+
+#force to https
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
