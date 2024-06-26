@@ -14,3 +14,6 @@ ErrorDocument 404 /php-lang/notfound.php
 #force to https
 #RewriteCond %{HTTPS} !=on
 #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#force redirect to a url when you enter any url
+#RewriteRule ^(.*)$ https://www.storystar.com/ [R=301,L]
