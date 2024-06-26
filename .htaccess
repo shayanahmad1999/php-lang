@@ -1,3 +1,7 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+Redirect 301 /php-lang/home http://localhost/php-lang/index
+
+ErrorDocument 404 /php-lang/notfound.php
