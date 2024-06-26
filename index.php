@@ -52,8 +52,8 @@ require './lang.php';
         }
     </style>
     <header>
-        <div><a href="#"><?= __('Home')?></a></div>
-        <div><a href="#"><?= __('About us')?></a></div>
+        <div><a href="home"><?= __('Home')?></a></div>
+        <div><a href="about"><?= __('About us')?></a></div>
         <div><a href="#"><?= __('contact us')?></a></div>
         <div><a href="#"><?= __('Login')?></a></div>
         <div><a href="#"><?= __('Signup')?></a></div>
