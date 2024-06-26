@@ -15,5 +15,13 @@ ErrorDocument 404 /php-lang/notfound.php
 #RewriteCond %{HTTPS} !=on
 #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+#add www to url
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 #force redirect to a url when you enter any url
 #RewriteRule ^(.*)$ https://www.storystar.com/ [R=301,L]
+
+#force redirect to a url when you enter a specific url
+#RewriteCond %{REQUEST_URI} ^/php-lang/storystar$
+#RewriteRule ^(.*)$ https://www.storystar.com [R=301,L]
